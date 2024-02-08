@@ -1,0 +1,48 @@
+head,body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#000000, rgb(71, 71, 71));
+  }
+  
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+  }
+  .slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    border: none;
+    background: white; opacity: 50%;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
